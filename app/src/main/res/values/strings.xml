@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">ToDoList</string>
+    <string name="text">424.95 GB 1TB used</string>
+    <string name="welcome">WelCome,shien</string>
+    <string name="text1">192 files,1.4 GB</string>
+    <string name="name1">Jerome K.</string>
+    <string name="name2">Ana M.</string>
+    <string name="text3">15 files,15.2 GB</string>
+    <string name="text4">SHARE YOUR DEVICES</string>
+    <string name="underline">Srushti Patil</string>
+    <string name="new_welcm">welcome back</string>
+    <string name="emp">Employees and Leave</string>
+    <string name="sal">Client and Salary</string>
+
+</resources>
