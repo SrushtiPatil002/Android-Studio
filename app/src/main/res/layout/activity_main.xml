@@ -1,257 +1,178 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_begin="16dp" />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_end="16dp" />
-
-    <View
-        android:id="@+id/view"
-        android:layout_width="374dp"
-        android:layout_height="200dp"
-        android:background="#87CEEB"
-        app:layout_constraintEnd_toStartOf="@id/guideline4"
-        app:layout_constraintStart_toStartOf="@+id/guideline3"
-        app:layout_constraintTop_toTopOf="parent" >
-
-
-
-    </View>
-
-    <androidx.cardview.widget.CardView
-        android:id="@+id/pinkcard"
-        android:layout_width="352dp"
-        android:layout_height="wrap_content"
-        android:layout_margin="24dp"
-        app:cardBackgroundColor="#FE2C54"
-        app:layout_constraintBottom_toBottomOf="@id/view"
-        app:layout_constraintEnd_toStartOf="@id/guideline4"
-        app:layout_constraintStart_toStartOf="@+id/guideline3"
-        app:layout_constraintTop_toBottomOf="@id/view"
-        app:cardCornerRadius="10dp"
-        app:cardElevation="8dp">
-
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="8dp"
-            android:orientation="horizontal"
-            android:padding="1dp">
-
-
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="8dp"
-                android:orientation="vertical"
-                android:padding="8dp">
-
-                <TextView
-                    android:id="@+id/tv1"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Vaccine"
-                    android:textColor="@color/white"
-                    android:textSize="24sp"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:id="@+id/tv2"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Togather"
-                    android:textColor="@color/white"
-                    android:textSize="24sp"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:id="@+id/tv3"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Orphans"
-                    android:textColor="@color/white"
-                    android:textSize="24sp"
-                    android:textStyle="bold" />
-
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:orientation="vertical"
-                android:layout_width="200dp"
-                android:layout_height="match_parent">
-
-                <ImageView
-                    android:id="@+id/im1"
-                    android:layout_width="80dp"
-                    android:layout_height="80dp"
-                    android:layout_margin="16dp"
-                    android:layout_gravity="right"
-                    android:src="@drawable/picture" />
-            </LinearLayout>
-        </LinearLayout>
-
-
-    </androidx.cardview.widget.CardView>
-
-    <LinearLayout
-        android:id="@+id/l1"
-        android:layout_width="wrap_content"
-        android:layout_height="148dp"
-        android:orientation="vertical"
-        app:layout_constraintStart_toStartOf="@+id/view"
-        app:layout_constraintTop_toTopOf="parent">
-
-
-        <TextView
-            android:id="@+id/textView"
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:text="@string/new_welcm"
-            android:textColor="@color/white"
-            app:layout_constraintStart_toStartOf="@+id/guideline"
-            app:layout_constraintTop_toTopOf="parent" />
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="16dp" />
 
-        <TextView
-            android:id="@+id/textView2"
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/underline"
-            android:textColor="@color/white"
-            android:textSize="40sp"
-            android:textStyle="bold"
-            app:layout_constraintStart_toStartOf="@+id/guideline"
-            app:layout_constraintTop_toBottomOf="@+id/textView" />
-    </LinearLayout>
+            android:orientation="vertical"
+            app:layout_constraintGuide_end="16dp" />
 
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="148dp"
-        android:orientation="vertical"
-        app:layout_constraintStart_toStartOf="@+id/l1"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintEnd_toStartOf="@id/guideline4">
-
-    </LinearLayout>
-
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:layout_marginTop="48dp"
-        android:layout_marginEnd="8dp"
-        app:layout_constraintEnd_toStartOf="@+id/guideline4"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/notification" />
-
-    <LinearLayout
-        android:id="@+id/scrollbar"
-        android:layout_width="383dp"
-        android:layout_height="49dp"
-        android:orientation="horizontal"
-        app:layout_constraintEnd_toEndOf="@id/pinkcard"
-        app:layout_constraintStart_toStartOf="@id/pinkcard"
-        app:layout_constraintTop_toBottomOf="@id/pinkcard">
-
-        <ImageView
-            android:layout_width="80dp"
-            android:layout_height="50dp"
-            android:src="@drawable/more"
-            android:layout_marginStart="150dp"/>
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/texts"
-        android:layout_width="384dp"
-        android:layout_height="36dp"
-        android:orientation="horizontal"
-        app:layout_constraintEnd_toEndOf="@id/scrollbar"
-        app:layout_constraintStart_toStartOf="@id/scrollbar"
-        app:layout_constraintTop_toBottomOf="@id/scrollbar">
+        <View
+            android:id="@+id/view"
+            android:layout_width="0dp"
+            android:layout_height="180dp"
+            android:background="@color/sky_blue"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
 
 
-        <TextView
-            android:id="@+id/stv1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:layout_marginBottom="8dp"
-            android:layout_marginEnd="48dp"
-            android:layout_marginStart="16dp"
-            android:gravity="left"
-            android:text="Main Menu"
-            android:textStyle="bold"
-            android:textColor="@color/black" />
-
-        <TextView
-            android:id="@+id/stv2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="180dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginBottom="8dp"
-            android:padding="1dp"
-            android:text="See All"
-            android:textColor="#FE2C54" />
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/cardset1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintEnd_toEndOf="@id/texts"
-        app:layout_constraintStart_toStartOf="@id/texts"
-        app:layout_constraintTop_toBottomOf="@id/texts">
-
+        </View>
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/sblueCard"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_margin="16dp"
-            app:cardBackgroundColor="@color/sky_blue"
+            android:id="@+id/pinkcard"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="16dp"
+            app:cardBackgroundColor="@color/orange"
             app:cardCornerRadius="16dp"
-            app:cardElevation="8dp">
+            app:cardElevation="8dp"
+            app:layout_constraintEnd_toStartOf="@id/guideline4"
+
+            app:layout_constraintStart_toStartOf="@+id/guideline3"
+            app:layout_constraintTop_toBottomOf="@+id/guideline5">
 
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="48dp"
-                android:orientation="horizontal">
+                android:layout_margin="8dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="1dp">
+
+                <TextView
+                    android:id="@+id/tv1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_weight="1"
+                    android:text="Vaccine\nTogether\nOrphans"
+                    android:textColor="@color/white"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
 
                 <ImageView
-                    android:id="@+id/emp"
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-                    android:layout_marginStart="64dp"
-                    android:layout_marginTop="16dp"
-                    android:src="@drawable/id">
+                    android:id="@+id/im1"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_weight="1"
+                    android:layout_margin="16dp"
+                    android:src="@drawable/image_white" />
 
-                </ImageView>
             </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:id="@+id/l1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toTopOf="@+id/guideline5"
+            app:layout_constraintStart_toStartOf="@+id/guideline3"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/new_welcm"
+                android:textColor="@color/white"
+                app:layout_constraintStart_toStartOf="@+id/guideline"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/underline"
+                android:textColor="@color/white"
+                android:textSize="40sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/guideline"
+                app:layout_constraintTop_toBottomOf="@+id/textView" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintBottom_toBottomOf="@+id/l1"
+            app:layout_constraintEnd_toStartOf="@+id/guideline4"
+            app:layout_constraintTop_toTopOf="@+id/l1"
+            app:srcCompat="@drawable/bell" />
+
+        <TextView
+            android:layout_width="16dp"
+
+            android:layout_height="16dp"
+            android:text="1"
+            app:layout_constraintRight_toRightOf="@id/imageView"
+            app:layout_constraintTop_toTopOf="@id/imageView"/>
+
+        <ImageView
+            android:id="@+id/dots_IV"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+
+            android:src="@drawable/more"
+            app:layout_constraintLeft_toRightOf="@id/guideline3"
+            app:layout_constraintRight_toLeftOf="@id/guideline4"
+            app:layout_constraintTop_toBottomOf="@id/pinkcard" />
+
+        <TextView
+            android:id="@+id/stv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Main Menu"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toRightOf="@id/guideline3"
+            app:layout_constraintTop_toBottomOf="@id/dots_IV" />
+
+        <TextView
+            android:id="@+id/stv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="See All"
+            android:textColor="#FE2C54"
+            app:layout_constraintRight_toLeftOf="@id/guideline4"
+            app:layout_constraintTop_toBottomOf="@id/dots_IV" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/sblueCard"
+            app:cardBackgroundColor="@color/sky_blue"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:layout_marginEnd="8dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="8dp"
+            app:layout_constraintLeft_toRightOf="@id/guideline3"
+            app:layout_constraintRight_toLeftOf="@id/guideline6"
+            app:layout_constraintTop_toTopOf="@id/yellowcard">
+
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -259,12 +180,24 @@
                 android:orientation="vertical"
                 android:padding="16dp">
 
+                <ImageView
+                    android:id="@+id/emp"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="right"
+
+                    android:src="@drawable/id">
+
+                </ImageView>
+
+
+
 
                 <TextView
                     android:id="@+id/emptxt1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="40dp"
+                    android:layout_marginTop="32dp"
                     android:text="Management"
                     android:textColor="@color/white"
                     android:textSize="18sp" />
@@ -285,30 +218,20 @@
 
         <androidx.cardview.widget.CardView
             android:id="@+id/yellowcard"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
             app:cardBackgroundColor="@color/mango_yellow"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+
             app:cardCornerRadius="16dp"
             app:cardElevation="8dp"
-            android:layout_margin="16dp">
+            app:layout_constraintLeft_toRightOf="@id/guideline6"
+            app:layout_constraintRight_toLeftOf="@id/guideline4"
+            app:layout_constraintTop_toBottomOf="@id/stv2"
+            >
 
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="48dp"
-                android:orientation="horizontal">
-
-                <ImageView
-                    android:id="@+id/salary"
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-                    android:layout_marginStart="64dp"
-                    android:layout_marginTop="16dp"
-                    android:src="@drawable/sack">
-
-                </ImageView>
-            </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -316,12 +239,24 @@
                 android:orientation="vertical"
                 android:padding="16dp">
 
+                <ImageView
+                    android:id="@+id/salary"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+
+
+                    android:src="@drawable/sack"
+                    android:layout_gravity="right">
+
+                </ImageView>
+
+
 
                 <TextView
                     android:id="@+id/emptxt3"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="40dp"
+                    android:layout_marginTop="32dp"
                     android:text="@string/sal"
                     android:textColor="@color/white"
                     android:textSize="18sp" />
@@ -338,59 +273,45 @@
 
 
         </androidx.cardview.widget.CardView>
-    </LinearLayout>
-
-
-    <LinearLayout
-        android:id="@+id/cardset2"
-        android:layout_width="379dp"
-        android:layout_height="136dp"
-        android:orientation="horizontal"
-        app:layout_constraintEnd_toEndOf="@id/cardset1"
-        app:layout_constraintStart_toStartOf="@id/cardset1"
-        app:layout_constraintTop_toBottomOf="@id/cardset1">
 
 
         <androidx.cardview.widget.CardView
             android:id="@+id/pinkcard2"
-            app:cardBackgroundColor="#FE2C54"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_marginEnd="12dp"
-            android:layout_marginStart="8dp"
+            app:cardBackgroundColor="@color/orange"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:layout_marginEnd="8dp"
             app:cardCornerRadius="16dp"
-            app:cardElevation="8dp">
+            app:cardElevation="8dp"
+            app:layout_constraintLeft_toRightOf="@id/guideline3"
+            app:layout_constraintRight_toLeftOf="@id/guideline6"
+            app:layout_constraintTop_toTopOf="@id/greencard">
+
+
 
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="48dp"
-                android:orientation="horizontal">
+                android:orientation="vertical"
+                android:padding="16dp">
 
                 <ImageView
                     android:id="@+id/prg"
                     android:layout_width="30dp"
                     android:layout_height="30dp"
-                    android:layout_marginStart="64dp"
-                    android:layout_marginTop="16dp"
+                    android:layout_gravity="right"
                     android:src="@drawable/programming">
 
                 </ImageView>
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="164dp"
-                android:layout_height="match_parent"
-                android:orientation="vertical"
-                android:padding="16dp">
 
 
                 <TextView
                     android:id="@+id/prgm"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="40dp"
+                    android:layout_marginTop="32dp"
                     android:text="Program"
                     android:textColor="@color/white"
                     android:textSize="18sp" />
@@ -411,45 +332,45 @@
 
         <androidx.cardview.widget.CardView
             android:id="@+id/greencard"
-            android:layout_width="168dp"
-            android:layout_height="match_parent"
-            android:layout_marginStart="20dp"
+
             app:cardBackgroundColor="#006a4e"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+
             app:cardCornerRadius="16dp"
             app:cardElevation="8dp"
+            app:layout_constraintLeft_toRightOf="@id/guideline6"
+            app:layout_constraintRight_toLeftOf="@id/guideline4"
+            app:layout_constraintTop_toBottomOf="@id/yellowcard"
 
             >
+
+
 
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="48dp"
-                android:orientation="horizontal">
+                android:orientation="vertical"
+                android:padding="16dp">
 
                 <ImageView
                     android:id="@+id/plus"
                     android:layout_width="30dp"
                     android:layout_height="30dp"
-                    android:layout_marginStart="64dp"
-                    android:layout_marginTop="16dp"
-                    android:src="@drawable/plus">
+                    android:src="@drawable/plus"
+                    android:layout_gravity="right">
 
                 </ImageView>
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="167dp"
-                android:layout_height="match_parent"
-                android:orientation="vertical"
-                android:padding="16dp">
 
 
                 <TextView
                     android:id="@+id/sys1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="40dp"
+                    android:layout_marginTop="32dp"
                     android:text="System"
                     android:textColor="@color/white"
                     android:textSize="18sp" />
@@ -466,7 +387,20 @@
 
 
         </androidx.cardview.widget.CardView>
-    </LinearLayout>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.14" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.5" />
 
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
